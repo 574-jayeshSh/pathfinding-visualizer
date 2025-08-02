@@ -24,4 +24,5 @@ Hi! I'm Jayesh Sharma, and this is my **Pathfinding Visualizer** — a React + T
 
 ## 🖼️ Screenshot
 
-![Pathfinding Visualizer Screenshot](\src\assets\Screenshot 2025-08-02 212651.png)
+![Pathfinding Visualizer Screenshot](./src/assets/Screenshot_2025-08-02_212651.png)
+
