@@ -1,69 +1,24 @@
-# React + TypeScript + Vite
+# 🧭 Pathfinding Visualizer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Hi! I'm Jayesh Sharma, and this is my **Pathfinding Visualizer** — a React + Tailwind CSS-based interactive tool that demonstrates how popular pathfinding algorithms work in real-time on a grid.
 
-Currently, two official plugins are available:
+## 🎯 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Interactive Grid** – Create walls and weighted nodes by clicking or Shift+Clicking.
+- **Visualize Algorithms**:
+  - 🟦 **Dijkstra's Algorithm** (Weighted, always finds the shortest path)
+  - 🟩 **Breadth-First Search (BFS)** (Unweighted, shortest path)
+  - 🟨 **Depth-First Search (DFS)** (Unweighted, not optimal)
+  - 🟥 **A\*** (Coming Soon – Heuristic-based and smart)
 
-## Expanding the ESLint configuration
+- **Reset Grid** – Clear walls, weights, and paths with one click.
+- **Adjust Speed** – Toggle between normal and fast visualization speeds.
+- **Responsive UI** – Works well on desktop and adapts to different screen sizes.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Technologies Used
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **React.js** – For dynamic UI and component management
+- **Tailwind CSS** – For fast, clean, and responsive styling
+- **TypeScript** – For better code structure and type safety (if you’ve used it)
+- **Custom Hooks** – For grid logic and pathfinding animation
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
