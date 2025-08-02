@@ -22,3 +22,6 @@ Hi! I'm Jayesh Sharma, and this is my **Pathfinding Visualizer** — a React + T
 - **TypeScript** – For better code structure and type safety (if you’ve used it)
 - **Custom Hooks** – For grid logic and pathfinding animation
 
+## 🖼️ Screenshot
+
+![Pathfinding Visualizer Screenshot](\src\assets\Screenshot 2025-08-02 212651.png)
